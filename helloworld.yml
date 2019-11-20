@@ -15,4 +15,6 @@
       win_file:
         path: 'C:\Temp2'
         state: directory
+        
+    - debug: msg="{{ cmd_result.stdout }}"
       
