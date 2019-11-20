@@ -1,6 +1,11 @@
+---
 - name: Hello World Sample
   hosts: all
+  
   tasks:
     - name: Hello Message
       debug:
         msg: "Hello World!"
+    
+    - name: test win_shell
+      win_shell: write-host (get-date)
