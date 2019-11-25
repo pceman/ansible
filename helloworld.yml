@@ -16,5 +16,10 @@
         path: 'C:\Temp2'
         state: directory
         
+    - name: Restart a service
+      win_service:
+        name: Spooler
+        state: restarted
+        
     - debug: msg="{{ cmd_result.stdout }}"
       
